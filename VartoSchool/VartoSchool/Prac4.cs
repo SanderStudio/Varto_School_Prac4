@@ -12,13 +12,13 @@ namespace VartoSchool
     {
         static void Main(string[] args)
         {
-            //int[] myArray = new int[50];
+            int[] myArray = new int[50];
 
-            //for (int i = 0, j = 0; j < myArray.Length; i += 2, j++)
-            //{
-            //    myArray[j] = i;
-            //    Console.WriteLine($"Element {j}: {i}");
-            //}
+            for (int i = 0, j = 0; j < myArray.Length; i += 2, j++)
+            {
+                myArray[j] = i;
+                Console.WriteLine($"Element {j}: {i}");
+            }
 
 
 
@@ -67,39 +67,39 @@ namespace VartoSchool
             //    }
             //}
 
-            bool ready = true;
-            int numbers;
-            int letterNumbers;
-            while (ready)
-            {
-                Console.WriteLine($"Enter your Text");
-                string text = Console.ReadLine();
-                string lowerText = text.ToLower();
-                numbers = 0;
-                letterNumbers = 0;
+            //bool ready = true;
+            //int numbers;
+            //int letterNumbers;
+            //while (ready)
+            //{
+            //    Console.WriteLine($"Enter your Text");
+            //    string text = Console.ReadLine();
+            //    string lowerText = text.ToLower();
+            //    numbers = 0;
+            //    letterNumbers = 0;
 
-                Console.WriteLine($"Enter letter you want to find");
-                string letter = Console.ReadLine();
-                string letterLower = letter.ToLower();
-                char lowerLetter = Convert.ToChar(letterLower);
+            //    Console.WriteLine($"Enter letter you want to find");
+            //    string letter = Console.ReadLine();
+            //    string letterLower = letter.ToLower();
+            //    char lowerLetter = Convert.ToChar(letterLower);
 
-                foreach (char item in lowerText)
-                {
-                    if (item == lowerLetter)
-                    {
-                        letterNumbers++;
-                    }
-                    numbers++;
-                }
-                Console.WriteLine($"Text {text} include: {numbers} symbols");
-                Console.WriteLine($"Found {letterNumbers} letters {letter} in {text}");
+            //    foreach (char item in lowerText)
+            //    {
+            //        if (item == lowerLetter)
+            //        {
+            //            letterNumbers++;
+            //        }
+            //        numbers++;
+            //    }
+            //    Console.WriteLine($"Text {text} include: {numbers} symbols");
+            //    Console.WriteLine($"Found {letterNumbers} letters {letter} in {text}");
 
-                Console.WriteLine($"Continue?");
-                if (Console.ReadLine() == "y")
-                    ready = true;
-                else
-                    ready = false;
-            }
+            //    Console.WriteLine($"Continue?");
+            //    if (Console.ReadLine() == "y")
+            //        ready = true;
+            //    else
+            //        ready = false;
+            //}
 
 
             //char[] alphabetArray = new char[26];
