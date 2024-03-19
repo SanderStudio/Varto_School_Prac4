@@ -67,6 +67,7 @@ namespace VartoSchool
             //    }
             //}
 
+
             bool ready = true;
             int numbers;
             int letterNumbers;
