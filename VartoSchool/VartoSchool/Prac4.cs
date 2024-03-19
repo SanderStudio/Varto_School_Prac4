@@ -67,53 +67,53 @@ namespace VartoSchool
             //    }
             //}
 
-            bool ready = true;
-            int numbers;
-            int letterNumbers;
-            while (ready)
-            {
-                Console.WriteLine($"Enter your Text");
-                string text = Console.ReadLine();
-                string lowerText = text.ToLower();
-                numbers = 0;
-                letterNumbers = 0;
-
-                Console.WriteLine($"Enter letter you want to find");
-                string letter = Console.ReadLine();
-                string letterLower = letter.ToLower();
-                char lowerLetter = Convert.ToChar(letterLower);
-
-                foreach (char item in lowerText)
-                {
-                    if (item == lowerLetter)
-                    {
-                        letterNumbers++;
-                    }
-                    numbers++;
-                }
-                Console.WriteLine($"Text {text} include: {numbers} symbols");
-                Console.WriteLine($"Found {letterNumbers} letters {letter} in {text}");
-
-                Console.WriteLine($"Continue?");
-                if (Console.ReadLine() == "y")
-                    ready = true;
-                else
-                    ready = false;
-            }
-
-
-            //char[] alphabetArray = new char[26];
-
-            //for (int i = 0; i < alphabetArray.Length; i++)
+            //bool ready = true;
+            //int numbers;
+            //int letterNumbers;
+            //while (ready)
             //{
-            //    alphabetArray[i] = (char)('a' + i);
+            //    Console.WriteLine($"Enter your Text");
+            //    string text = Console.ReadLine();
+            //    string lowerText = text.ToLower();
+            //    numbers = 0;
+            //    letterNumbers = 0;
+
+            //    Console.WriteLine($"Enter letter you want to find");
+            //    string letter = Console.ReadLine();
+            //    string letterLower = letter.ToLower();
+            //    char lowerLetter = Convert.ToChar(letterLower);
+
+            //    foreach (char item in lowerText)
+            //    {
+            //        if (item == lowerLetter)
+            //        {
+            //            letterNumbers++;
+            //        }
+            //        numbers++;
+            //    }
+            //    Console.WriteLine($"Text {text} include: {numbers} symbols");
+            //    Console.WriteLine($"Found {letterNumbers} letters {letter} in {text}");
+
+            //    Console.WriteLine($"Continue?");
+            //    if (Console.ReadLine() == "y")
+            //        ready = true;
+            //    else
+            //        ready = false;
             //}
 
-            //    Console.WriteLine("Символ\tПорядковий номер в ASCII");
-            //    for (int j = 0; j < alphabetArray.Length; j++)
-            //    {
-            //        Console.WriteLine(alphabetArray[j] + "\t" + (int)alphabetArray[j]);
-            //    }
+
+            char[] alphabetArray = new char[26];
+
+            for (int i = 0; i < alphabetArray.Length; i++)
+            {
+                alphabetArray[i] = (char)('a' + i);
+            }
+
+            Console.WriteLine("Символ\tПорядковий номер в ASCII");
+            for (int j = 0; j < alphabetArray.Length; j++)
+            {
+                Console.WriteLine(alphabetArray[j] + "\t" + (int)alphabetArray[j]);
+            }
         }
     }
 }
